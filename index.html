@@ -10,6 +10,9 @@
             font-size: 20px;
             font-weight: bold; }
 
+        html, body {
+                min-height: 100hv;
+        }
             body {
                 background-image: url(imagens/pexels-sean-whang-25006-804269.jpg);
                 background-repeat: no-repeat;
@@ -21,6 +24,7 @@
                 font-size: 2em;
                 color: white;
                 text-align: center;
+                min-width: 300px;
             }
 
             form {
@@ -49,16 +53,18 @@
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="post">
-        <h1>Login</h1>
-        <label for="inome">
-            <p><input type="text" name="nome" id="inome" placeholder="Usuario" required></p>
-        </label>
-        <label for="isobrenome">
-            <p><input type="password" name="sobrenome" id="isobrenome" placeholder="Senha" required></p>
-        </label>
-        <p class="enviar"><input type="submit" value="Login">
-            <input type="reset" value="Limpar"></p>
-    </form>
+    <section>
+        <form action="cadastro.php" method="post">
+            <h1>Login</h1>
+            <label for="inome">
+                <p><input type="text" name="nome" id="inome" placeholder="Usuario" required></p>
+            </label>
+            <label for="isobrenome">
+                <p><input type="password" name="sobrenome" id="isobrenome" placeholder="Senha" required></p>
+            </label>
+            <p class="enviar"><input type="submit" value="Login">
+                <input type="reset" value="Limpar"></p>
+        </form>
+    </section>
 </body>
 </html>
